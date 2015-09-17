@@ -4,12 +4,12 @@ const hapi = require("hapi");
 const server = new hapi.Server();
 
 server.connection({
-  host: "10.0.1.3",
+  host: "0.0.0.0",
   port: 8000,
   labels: ["api"]
 });
 server.connection({
-  host: "10.0.1.3",
+  host: "0.0.0.0",
   port: 8001,
   labels: ["chat"] 
 });

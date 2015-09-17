@@ -10,7 +10,8 @@ import UIKit
 import Socket_IO_Client_Swift
 
 class ViewController: UIViewController {
-    let socket = SocketIOClient(socketURL: "10.0.1.3:8001")
+    let socket = SocketIOClient(socketURL: "localhost:8001"/*, opts: [
+        "log": true]*/)
 
     @IBOutlet weak var response: UITextField!
 
