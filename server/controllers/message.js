@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 class Message {
-  
+
   constructor() {}
 
   sayHi(msg) {

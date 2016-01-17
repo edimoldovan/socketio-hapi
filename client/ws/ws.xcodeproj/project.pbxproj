@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3B41D3A46224CD12A980FD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661C4460819F731DFC5788C7 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D3B41D3A46224CD12A980FD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661C4460819F731DFC5788C7 /* Pods.framework */; };
 		2595073D1BAAB30800B77F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595073C1BAAB30800B77F29 /* AppDelegate.swift */; };
 		2595073F1BAAB30800B77F29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595073E1BAAB30800B77F29 /* ViewController.swift */; };
 		259507421BAAB30800B77F29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259507401BAAB30800B77F29 /* Main.storyboard */; };
@@ -222,6 +222,7 @@
 				TargetAttributes = {
 					259507381BAAB30800B77F29 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = KT423RWN8D;
 					};
 					2595074F1BAAB30800B77F29 = {
 						CreatedOnToolsVersion = 7.0;
@@ -478,10 +479,13 @@
 			baseConfigurationReference = 5B22EE2DD71F76490AA4ECA1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ws/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eduardmoldovan.com.ws;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -490,10 +494,13 @@
 			baseConfigurationReference = 46633A84A06C9D8CCE17FBE0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ws/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eduardmoldovan.com.ws;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
